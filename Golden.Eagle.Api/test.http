@@ -1,1 +1,1 @@
-GET http://localhost:5188/[controller]
+GET http://localhost:5188/[controller]/1
