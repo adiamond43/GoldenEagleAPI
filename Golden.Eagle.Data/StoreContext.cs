@@ -1,4 +1,5 @@
 ﻿using Golden.Eagle.Domain.Catalog;
+using Golden.Eagle.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace Golden.Eagle.Data
@@ -10,6 +11,7 @@ namespace Golden.Eagle.Data
         { }
 
         public DbSet<Item> Items { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

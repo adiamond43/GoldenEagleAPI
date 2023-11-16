@@ -1,6 +1,7 @@
 @Golden.Eagle.Api_HostAddress = http://localhost:5188
 
-GET {{Golden.Eagle.Api_HostAddress}}/weatherforecast/
+GET http://localhost:5188/catalog
+GET {Golden.Eagle.Api_HostAddress}/[controller]/
 Accept: application/json
 
 ###
