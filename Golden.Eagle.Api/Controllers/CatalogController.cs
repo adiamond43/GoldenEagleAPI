@@ -5,7 +5,7 @@ using Golden.Eagle.Data;
 namespace Golden.Eagle.Api.Controllers
 {
     [ApiController]
-    [Route ("[[controller]]")]
+    [Route ("[controller]")]
     public class CatalogController : ControllerBase
     {
         private readonly StoreContext _db;
@@ -19,7 +19,7 @@ namespace Golden.Eagle.Api.Controllers
     [HttpGet]
     public IActionResult GetItems()
     {
-        return Ok(_db.Items);
+        return Ok("Hello World.");
     }
 
     [HttpGet("{id:int}")]
