@@ -19,7 +19,7 @@ namespace Golden.Eagle.Api.Controllers
     [HttpGet]
     public IActionResult GetItems()
     {
-        return Ok("Hello World.");
+        return Ok(_db.Items);
     }
 
     [HttpGet("{id:int}")]
@@ -37,7 +37,9 @@ namespace Golden.Eagle.Api.Controllers
     [HttpPost]
     public IActionResult Post(Item item)
     {
-        return Created("/[controller]/42", item);
+        _db.Items.Add(item);
+        _db.SaveChanges();
+        return Created($"/catalog/{item.Id}", item);
     }
 
     [HttpPost("{id:int}/ratings")]
