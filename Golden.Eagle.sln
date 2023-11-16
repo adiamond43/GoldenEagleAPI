@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golden.Eagle.Domain", "Gold
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golden.Eagle.Data", "Golden.Eagle.Data\Golden.Eagle.Data.csproj", "{C7C24C5E-ED39-4024-8879-56D390918CB8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{71E7552A-C97D-4DB4-8E55-5CF3B9ABFFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golden.Eagle.Domain.Tests", "tests\Golden.Eagle.Domain.Tests\Golden.Eagle.Domain.Tests.csproj", "{6E21253D-F99F-48D9-A403-9C2FDC53D0E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{C7C24C5E-ED39-4024-8879-56D390918CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7C24C5E-ED39-4024-8879-56D390918CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7C24C5E-ED39-4024-8879-56D390918CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E21253D-F99F-48D9-A403-9C2FDC53D0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E21253D-F99F-48D9-A403-9C2FDC53D0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E21253D-F99F-48D9-A403-9C2FDC53D0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E21253D-F99F-48D9-A403-9C2FDC53D0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E21253D-F99F-48D9-A403-9C2FDC53D0E7} = {71E7552A-C97D-4DB4-8E55-5CF3B9ABFFF9}
 	EndGlobalSection
 EndGlobal
