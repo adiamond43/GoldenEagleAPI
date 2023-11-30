@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Golden.Eagle.Domain.Catalog;
 using Golden.Eagle.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Golden.Eagle.Api.Controllers
 {
@@ -19,7 +20,7 @@ namespace Golden.Eagle.Api.Controllers
     [HttpGet]
     public IActionResult GetItems()
     {
-        return Ok("hello world");
+        return Ok(_db.Items);
     }
 
     [HttpGet("{id:int}")]
@@ -78,6 +79,7 @@ namespace Golden.Eagle.Api.Controllers
     }
 
     [HttpDelete("{id:int}")]
+    [Authorize("delete:catalog")]
     public IActionResult DeleteItem(int id)
     {
         var item = _db.Items.Find(id);
